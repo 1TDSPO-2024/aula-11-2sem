@@ -39,7 +39,7 @@ export default function Produtos(){
                     <tr>
                         <th>Nome</th>
                         <th>Preço</th>
-                        <th>Editar</th>
+                        <th>Editar | Excluir</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,7 +47,7 @@ export default function Produtos(){
                         <tr key={p.id}>
                             <td>{p.nome}</td>
                             <td>{p.preco}</td>
-                            <td> <Link to={`/editar/produtos/${p.id}`}>Editar</Link> </td>
+                            <td> <Link to={`/editar/produtos/${p.id}`}>Editar</Link> | <Link to={`/excluir/produtos/${p.id}`}>Excluir</Link></td>
                         </tr>
                     ))}
                 </tbody>
